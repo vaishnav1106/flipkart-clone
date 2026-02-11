@@ -5,7 +5,7 @@ import DifferentProductCategory from "./DifferentProductCategory";
 import GamingConsoles from "./DifferentCategoriesAssets/ps.jpeg";
 import Watches from "./DifferentCategoriesAssets/watch.png";
 import Cameras from "./DifferentCategoriesAssets/camera.jpeg";
-import Laptop1 from "./DifferentCategoriesAssets/Laptop1.webp";
+import Laptop1 from "./DifferentCategoriesAssets/mobile.jpeg";
 import { Link } from "react-router-dom";
 
 function DifferentCategoriesCard(props) {
