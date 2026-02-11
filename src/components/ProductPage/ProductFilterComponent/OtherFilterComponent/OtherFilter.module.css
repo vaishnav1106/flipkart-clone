@@ -1,0 +1,45 @@
+
+.availabilityFilter{
+    border-top: 1px solid #f0f0f0;
+    padding: 16px;
+}
+.availabilityFilterHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.availabilityFilterHeading h1{
+    font-size: 13px;
+  font-weight: 500;
+  font-family: SemiBold;
+  letter-spacing: 0.3px;
+  line-height: 25px;
+}
+
+.options{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.options label{
+     font-size: 13px;
+    font-family: Regular;
+    font-weight: 400;
+    line-height: 14px;
+    color: #212121;
+}
+
+.arrow{
+    transform: rotate(90deg);
+    width: 6px;
+}
+
+.arrowRotate{
+    transform: rotate(-90deg);
+}
+
+.close{
+    display: none;
+}

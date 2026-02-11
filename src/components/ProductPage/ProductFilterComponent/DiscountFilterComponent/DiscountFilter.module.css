@@ -1,0 +1,48 @@
+.customerRatingsMain {
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  border-top: 1px solid #f0f0f0;
+}
+.customerRatingsHeading h1 {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: SemiBold;
+  letter-spacing: 0.3px;
+  line-height: 25px;
+}
+.customerRatingsHeading{
+    display: flex;
+    justify-content: space-between;
+}
+.arrow{
+    transform: rotate(-90deg);
+    width: 6px;
+}
+
+.rotateArrow{
+    transform: rotate(90deg);
+}
+
+.customerRatingOptions{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.customerRatingOptions div{ 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.customerRatingOptions div label{
+    font-size: 13px;
+    font-family: Regular;
+    font-weight: 400;
+    line-height: 14px;
+    color: #212121;
+}
+
+.hide{
+    display: none;
+}

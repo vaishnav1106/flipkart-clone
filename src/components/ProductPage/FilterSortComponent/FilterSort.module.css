@@ -1,0 +1,122 @@
+.filterSortMain {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 12px; */
+  height: 47px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
+}
+.filterSort {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.filterSort a{
+    text-decoration: none;
+    color: black;
+}
+
+.filterSort div {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.filterSort img {
+  width: 20px;
+}
+.filterSort h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 2px;
+  font-family: SemiBold;
+}
+.filterSort div {
+  position: relative;
+}
+.filterSort span {
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-size: 6px;
+  font-weight: 400;
+  font-family: SemiBold;
+  padding: 2px 4px;
+  top: 0;
+  left: 11px;
+  border-radius: 100%;
+}
+.middleLine {
+  width: 1px;
+  height: 16px;
+  background-color: #d5d7db;
+}
+
+.sortPopup {
+  background-color: white;
+  max-width: 425px;
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+}
+
+.sortPopupHeading {
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 12px;
+}
+.sortPopupHeading h2 {
+  margin: 12px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #878787;
+  font-weight: 400;
+}
+
+.sortOptions div {
+  display: flex;
+  padding: 6px 12px;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.sortOptions div label {
+  font-size: 14px;
+}
+
+
+
+.open {
+  height: 221px;
+  padding-bottom: 24px;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+}
+
+.selected {
+  background-color: white;
+}
+
+
+
+
+@media screen and (min-width: 1170px) {
+  .filterSortMain {
+    display: none;
+  }
+}

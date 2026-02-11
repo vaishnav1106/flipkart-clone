@@ -1,0 +1,140 @@
+.slide-section-main {
+  width: 100%;
+  /* position: relative; */
+}
+
+.slide-image-section {
+  width: 100%;
+  padding: 12px 16px 8px 16px;
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+  scrollbar-width: none;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+}
+
+.slide-image {
+    width: 100%;
+    border-radius: 15px;
+    transform: translateX(0);
+    scroll-snap-align: center;
+}
+  
+.scroll{
+  display: flex;
+}
+  .arrow-main {
+  position: absolute;
+  width: 40px;
+  height: 88px;
+  background-color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  z-index: 10;
+}
+.left-arrow {
+  left: -2px;
+}
+.right-arrow {
+  right: -2px;
+}
+.arrow {
+  width: 24px;
+  height: 24px;
+}
+.hide {
+  display: none;
+}
+
+.slide-progress-bar {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.progress-bar {
+  width: 48px;
+  height: 4px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.progress-bar-open{
+   width: 48px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.13);
+  position: relative;
+}
+
+.progress-bar-open::before{
+  position: absolute;
+  content: "";
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  animation: progressBarFill 3s infinite linear;
+}
+
+
+
+.progress-bar.close {
+  background-color: rgba(0, 0, 0, 0.13);
+  width: 12px;
+}
+
+.slide-image-large-main{
+  position: relative;
+  /* margin-top: 17px; */
+
+}
+
+.progress-bar-large{
+  display: none;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+}
+
+.slide-image-large{
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+}
+
+.slide-image-l{
+  height: 100%;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 1191px) {
+  .arrow-main {
+    display: flex;
+  }
+  .slide-section-main{
+    display: none;
+  }
+  .slide-image-large{
+    display: flex;
+  }
+  .progress-bar-large{
+    display: flex;
+  }
+}
+
+@keyframes progressBarFill{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}

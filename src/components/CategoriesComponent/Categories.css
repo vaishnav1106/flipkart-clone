@@ -1,0 +1,22 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 25px 0 4px 8px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.categories-section{
+    display: flex;
+    /* gap: 15px; */
+}
+.categories-section a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 1190px) {
+    .categories{
+        display: none;
+    }
+}

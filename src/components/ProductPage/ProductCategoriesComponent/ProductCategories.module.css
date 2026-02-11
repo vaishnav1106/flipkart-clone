@@ -1,0 +1,43 @@
+.productCategoriesMain{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.144);
+    display: none;
+}
+.productCategories{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+
+.productCategories div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.productCategories div h3{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: SemiBold;
+    line-height: 19px;
+}
+
+.arrow{
+    transform: rotate(-90deg);
+    margin-top: 2px;
+}
+.arrowRotate{
+    transform: rotate(90deg);
+}
+
+@media screen and (min-width: 1170px) {
+    .productCategoriesMain{
+        display: block;
+    }
+}

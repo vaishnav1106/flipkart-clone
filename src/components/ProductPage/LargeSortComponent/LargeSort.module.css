@@ -1,0 +1,39 @@
+.sortMain {
+  padding: 0 16px;
+  display: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+}
+.sortHeading span {
+  font-weight: 500;
+  font-family: SemiBold;
+  font-size: 12px;
+}
+.sortOption {
+  color: hsl(0, 0%, 13%);
+  font-size: 13px;
+  font-family: Regular;
+  font-weight: 400;
+}
+.sortHeading {
+  padding: 0 10px 4px 0;
+}
+
+.sortOptions {
+  margin: 0 10px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+.clickedOption {
+  border-bottom: 2px solid #2874f0;
+}
+.clickedOptionText {
+  color: #2874f0;
+  font-weight: 500;
+  font-family: SemiBold;
+}
+
+@media screen and (min-width: 1170px) {
+  .sortMain {
+    display: flex;
+  }
+}

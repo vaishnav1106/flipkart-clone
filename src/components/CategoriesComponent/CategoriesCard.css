@@ -1,0 +1,19 @@
+.card-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 66px;
+}
+.card-main img{
+    width: 51px;
+}   
+
+.card-main p{
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: SemiBold;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+

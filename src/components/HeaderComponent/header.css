@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Regular;
+  src: url("../../assets//Fonts/Inter-Regular.woff2");
+}
+@font-face {
+  font-family: SemiBold;
+  src: url("../../assets/Fonts/Inter-SemiBold.woff2");
+}
+@font-face {
+  font-family: Roboto;
+  src: url('../../assets//Fonts/roboto-regular.woff2');
+}
+
+
+.header{
+  padding: 4px 16px 3px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+.header-main{
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header-left-section{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex: 1;
+}
+.header-left-section div:nth-child(3){
+  flex: 1;
+}
+
+.header-right-section{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 5px;
+  position: relative;
+  right: 6px;
+}
+.hamburger img{
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
+.flip-logo img{
+  width: 160px;
+  height: 40px;
+}
+
+.header-right-section img{
+  width: 24px;
+  height: 24px;
+}
+.header-right-section div{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header-right-section span{
+  font-family: Regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header-right-section svg{
+  width: 12px;
+  height: 12px;
+}
+.search-main{
+  display: none;
+  background-color: rgb(240, 245, 255);
+  border-radius: 8px;
+  align-items: center;
+  height: 40px;
+}
+.search-main button{
+  border: none;
+  padding: 8px 9px 8px 12px;
+  background: transparent;
+}
+.search-main button img{
+  width: 24px;
+  height: 24px;
+}
+.search-main div{
+  width: 100%;
+}
+
+.search-main .search-bar{
+  border: none;
+  padding: 8px 12px 8px 0;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: Regular;
+  color: black;
+  padding-top: 6px;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  min-width: 240px;
+  max-width: 466px;
+  width: 100%;
+  outline: none;
+}
+.header-right-section div:nth-child(3) span{
+  display: none;
+}
+.header-right-section div:nth-child(4) span{
+  display: none;
+}
+
+
+.header-right-section div:nth-child(2) svg{
+  display: none;
+}
+.header-right-section div:nth-child(4){
+  display: none;
+}
+.header-right-section div:nth-child(5){
+  display: none;
+}
+
+.drop-down-main{
+  margin: 3px 18px 2px 9px;
+}
+
+
+
+@media screen and (min-width:425px) {
+  .header-right-section{
+    right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+    .header-main{
+      max-width: 996px;
+      padding: 12px;
+    }
+    .hamburger img{
+        display: none;
+    }
+    .flip-logo{
+        margin-right: -12px;
+        margin-left: 49px;
+    }
+    .get-app-logo{
+      display: none;
+    }
+    .header-left-section{
+      gap: 0;
+    }
+    .search-main {
+      display: flex;
+    }
+    .header-right-section {
+      right: 7px;
+      gap: 20px;
+      padding-bottom: 2px;
+    }
+    .header-right-section div:nth-child(2){
+        gap: 8px;
+    }
+    .header-right-section div:nth-child(2) svg{
+        display: flex;
+    }
+    .header-right-section div:nth-child(4){
+        display: flex;
+    }
+    .header-right-section div:nth-child(5){
+        display: flex;
+    }
+}
+
+@media  screen and (min-width:1190px) {
+      .header-main{
+        max-width: 1600px;
+        padding: 11px;
+      }
+      .header-right-section div:nth-child(3) span{
+        display: flex;
+      }
+      .header-right-section div:nth-child(4) span{
+        display: flex;
+      }
+      .search-main{
+         width: 100%; 
+      }
+      .header-left-section div:nth-child(3) {
+        max-width: 820px;
+      }
+      .header-right-section {
+        gap: 50px;
+      }
+      .header{
+        padding: 0 16px 0;
+      }
+}
+

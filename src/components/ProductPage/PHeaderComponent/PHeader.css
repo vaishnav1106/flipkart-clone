@@ -1,0 +1,47 @@
+.p-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 53px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 0 12px;
+}
+.p-header-left .left-arrow{
+    width: 19px;
+}
+.p-header-left .flip-logo{
+    width: 23px;
+    margin: 3px 0 0 1px;
+}
+.p-header-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.p-header-left h1{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto; 
+    margin: 1px 0 0 2px;  
+}
+.p-header-right{
+    display: flex;
+    align-items: center;
+}
+.p-header-right h1{
+    font-size: 16px;
+    line-height: 10px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin: 0 14px 0 36px;
+}
+.p-header-right .cart{
+    margin-left: 17px;
+}
+
+@media screen and (min-width:1170px){
+    .p-header{
+        display: none;
+    }
+}

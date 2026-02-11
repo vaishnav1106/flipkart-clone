@@ -1,0 +1,164 @@
+.filterPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filterPopupHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 17px 12px;
+}
+.filterPopupHeading div {
+  display: flex;
+  gap: 23px;
+}
+
+.filterPopupHeading div h1 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
+.filterPopupHeading span {
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 12px;
+  position: absolute;
+  right: 19px;
+  top: 20px;
+}
+
+.filterPopupMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 1px;
+}
+
+.filterPopupCategories {
+  background-color: #f1f3f6;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.popupCategory {
+  padding: 12px 8px 13px 16px;
+  min-height: 56px;
+  /* background-color: white; */
+}
+
+.popupCategory p {
+  font-size: 14px;
+  /* color: #2874f0; */
+  color: black;
+  font-family: Roboto;
+  /* line-height: 20px; */
+  font-weight: 400;
+}
+
+.filterPopupOptions {
+  flex: 2;
+}
+
+.filterPopupBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px 8px 8px 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.filterPopupBottom button {
+  min-height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0 67px;
+  background-color: rgba(255, 88, 0, 1);
+  color: white;
+  font-size: 14px;
+  font-family: none;
+}
+
+.filterPopupBottom div h3 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.filterPopupBottom div p {
+  font-size: 12px;
+  color: #878787;
+  font-weight: 400;
+}
+
+.clicked {
+  background-color: white;
+}
+
+.searchSection {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 7px 16px;
+}
+
+.searchSection input {
+  height: 40px;
+  padding-left: 40px;
+  flex: 1;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Roboto;
+  border: 1px solid #9b9b9b41;
+}
+
+.searchSection input::placeholder {
+  color: #9b9b9b;
+}
+
+.searchSection input:focus {
+  outline: none;
+}
+
+.searchSection img {
+  position: absolute;
+  left: 13px;
+  top: 12px;
+}
+
+.checkBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 19px 18px;
+  gap: 19px;
+}
+
+.checkBox input {
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.checkBox label {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}

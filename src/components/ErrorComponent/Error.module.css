@@ -1,0 +1,9 @@
+.errorMessageMain{
+    padding: 20px;
+}
+
+.errorMessageMain h1{
+    font-size: 18px;
+    font-family: Roboto;
+    color: red;
+}

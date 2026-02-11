@@ -1,0 +1,10 @@
+@media screen and (min-width: 1170px) {
+  .ProductFilterFinal {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin:0 auto ;
+    padding: 8px;
+    max-width: 1664px;
+  }
+}

@@ -1,0 +1,279 @@
+
+.productMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid rgba(0, 0, 0, 0.11);
+    margin-top: 10px;
+}
+
+.productCard{
+    padding: 26px 8px 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    overflow: hidden;
+    border-left: 1px solid rgba(0, 0, 0, 0.11);
+    padding-bottom: 18px;
+}
+
+.productImageSec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.likeSign{
+    width: 24px;
+    position: absolute;
+    right: 8px;
+    top: -13px;
+}
+
+.bestSeller{
+    position: absolute;
+    left: 0;
+    top: -17px;
+    font-size: 12px;
+    padding: 0 4px;
+    background-color: rgb(0, 160, 152);
+    color: white;
+    font-family: Roboto;
+    border-radius: 2px;
+}
+.bestSellerNone{
+    display: none;
+}
+
+.product{
+    width: 170px;
+}
+
+
+
+
+.productDetailsSec span{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.01px;
+    font-family: Regular;
+    color: rgb(184, 187, 191);
+   
+}
+
+
+.productDetailsSec h3{
+    font-size: 14px;
+    font-family: Regular;
+    font-weight: 400;
+    letter-spacing: -0.01px;
+    line-height: 20px;
+    color: rgb(32, 34, 36);
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.priceDetails{
+    display: flex;
+    margin-top: 3px;
+    gap: 5px;
+}
+
+.discountDet{
+    display: flex;
+    align-items: center;
+}
+
+.discountDet p{
+    color: #008C00;
+    font-size: 14px;
+    font-family: SemiBold;   
+    font-weight: 400;
+    letter-spacing: -0.01px;
+    line-height: 20px;
+}
+
+.discountArrow{
+    width: 16px;
+}
+
+.prices{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+.prices p{
+    font-size: 14px;
+    font-family: SemiBold;   
+    font-weight: 400;
+    letter-spacing: -0.01px;
+    line-height: 20px;
+}
+.prices p:nth-child(1){
+    color: #717478;
+    text-decoration: line-through;
+}
+
+.dealStatus{
+    color: #26A541;
+    font-size: 12px;
+    padding: 4px;
+    background-color: #E7F8EC;
+    width: fit-content;
+    border-radius: 2px;
+
+}
+
+
+
+.ratingStars{
+    display: flex;
+    gap: 3px;
+    margin-top: 12px;
+}
+
+.ratingStars img{
+    width: 13px;
+}
+
+.ratingSection{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.raingLarge{
+    display: none;
+    margin: 5px 0;
+    gap: 8px;
+}
+
+.raingLarge span{
+    font-size: 13px;
+    font-family: SemiBold;
+    color: #878787;
+    font-weight: 500;
+}
+
+.raingLarge .assuredLogoLarge{
+    width: 70px;
+}
+
+
+
+.ratingBox{
+    background-color:#388e3c;
+    border-radius: 3px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 4px 2px 6px;
+    gap: 2px;
+    height: 19px;
+}
+
+.ratingBox span{
+    font-size: 11px;
+    font-weight: 500;
+    font-family: SemiBold;
+    color: white;
+}
+
+.ratingBox img{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 2px;
+}
+
+.assuredLogo{
+    width: 55px;
+    margin-top: 12px;
+}
+
+.priceDetailsLarge{
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.priceDetailsLarge p:nth-child(1){
+    font-size: 15px;
+    font-family: SemiBold;
+    color: black;
+    font-weight: 500;
+}
+
+.priceDetailsLarge p:nth-child(2){
+    text-decoration: line-through;
+    color: #878787;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.priceDetailsLarge p:nth-child(3){
+    font-size: 12px;
+    font-family: SemiBold;
+    color:#008C00;
+    font-weight: 500;
+    letter-spacing: -.2px;
+}
+
+.blackStar{
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 0;
+    width: 14px;
+}
+
+@media screen and (min-width: 1170px) {
+    .productMain{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border: none;
+        margin-top: 0;
+    }
+    .productCard{
+        border-left: none;
+        transition: box-shadow .2s ease-in-out;
+        padding: 26px 16px 0;
+    }
+    .productCard:hover{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.164);
+        z-index: 1;
+    }
+    .raingLarge{
+        display: flex;
+    }
+    .ratingSection{
+        display: none;
+    }
+    .priceDetails{
+        display: none;
+    }
+    .priceDetailsLarge{
+        display: flex;
+    }
+    .productDetailsSec h3{
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    .product{
+        margin: 39px 0;
+    }
+    .likeSign{
+        display: none;
+    }
+    .blackStar{
+        display: block;
+    }
+    .bestSeller{
+        top: 0;
+    }
+}
