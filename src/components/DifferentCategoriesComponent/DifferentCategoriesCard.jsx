@@ -50,3 +50,5 @@ function DifferentCategoriesCard(props) {
 }
 
 export default DifferentCategoriesCard;
+
+

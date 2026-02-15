@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { brandFilterValueContext } from "../../../../../App";
 
 function BrandFilterOptions() {
-  const { brandFilterInputValue, setBrandFilterInputValue } =
+  const { setBrandFilterInputValue } =
     useContext(brandFilterValueContext);
 
   function brandFilterValue(e) {

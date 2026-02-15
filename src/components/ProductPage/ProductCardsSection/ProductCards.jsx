@@ -1,35 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import styles from "./ProductCards.module.css";
 import ProductCard from "./ProductCard.jsx";
-import { useContext } from "react";
 import { sortValueContext } from "../../../App.jsx";
 import { brandFilterValueContext } from "../../../App.jsx";
 import { priceFilterValueContext } from "../../../App.jsx";
 import { ratingFilterValueContext } from "../../../App.jsx";
 import { discountFilterValueContext } from "../../../App.jsx";
 import { priceSliderValueContext } from "../../../App.jsx";
+import { offerFilterValueContext } from "../../../App.jsx"; 
 
 function ProductCards() {
   const [products, setProducts] = useState([]);
-  const { sortInputValue, setSortInputValue } = useContext(sortValueContext);
-  const { brandFilterInputValue, setBrandFilterInputValue } = useContext(
-    brandFilterValueContext
-  );
-  const { priceFilterInputValue, setPriceFilterInputValue } = useContext(
-    priceFilterValueContext
-  );
 
-  const { ratingFilterInputValue, setRatingFilterInputValue } = useContext(
-    ratingFilterValueContext
-  );
+  const { sortInputValue } = useContext(sortValueContext);
+  const { brandFilterInputValue } = useContext(brandFilterValueContext);
+  const { priceFilterInputValue } = useContext(priceFilterValueContext);
+  const { ratingFilterInputValue } = useContext(ratingFilterValueContext);
+  const { discountFilterInputValue } = useContext(discountFilterValueContext);
+  const { priceFilterSliderInputValue } = useContext(priceSliderValueContext);
+  const { offerFilterInputValue } = useContext(offerFilterValueContext); 
 
-  const { discountFilterInputValue, setDiscountFilterInputValue } = useContext(
-    discountFilterValueContext
-  );
-
-  const { priceFilterSliderInputValue, setPriceFilterSliderInputValue } =
-    useContext(priceSliderValueContext);
-
+  // ✅ Fetch only once
   useEffect(() => {
     async function getProducts() {
       try {
@@ -41,16 +32,10 @@ function ProductCards() {
       }
     }
     getProducts();
-  }, [
-    sortInputValue,
-    brandFilterInputValue,
-    priceFilterInputValue,
-    ratingFilterInputValue,
-    discountFilterInputValue,
-    priceFilterSliderInputValue,
-  ]);
+  }, []);
 
-  const sortFilteredFinal = products.sort((a, b) => {
+  // ✅ Sorting
+  const sortedProducts = [...products].sort((a, b) => {
     switch (sortInputValue) {
       case "":
         return b.isBestSeller - a.isBestSeller;
@@ -67,113 +52,94 @@ function ProductCards() {
     }
   });
 
-  const brandFilteredFinal = sortFilteredFinal.filter((product) => {
-    return brandFilterInputValue.includes(product.brandName);
+  // ✅ Brand Filter
+const brandFiltered =
+  brandFilterInputValue.length === 0
+    ? sortedProducts
+    : sortedProducts.filter((product) =>
+        brandFilterInputValue.some(
+          (brand) =>
+            brand.toLowerCase() === product.brandName.toLowerCase()
+        )
+      );
+
+
+  // ✅ Offer Filter (OR logic)
+  const offerFiltered = brandFiltered.filter((product) => {
+  if (offerFilterInputValue.length === 0) return true;
+
+  return offerFilterInputValue.includes(product.offerFilter);
+});
+
+
+  // ✅ Price Filter
+const priceValue = Number(priceFilterInputValue);
+
+const priceFiltered = offerFiltered.filter((product) => {
+
+  if (!priceValue) return true;
+
+  if (priceValue === 1000) {
+    return product.price <= 1000;
+  }
+
+  if (priceValue === 25000) {
+    return product.price >= 1001 && product.price <= 25000;
+  }
+
+  if (priceValue === 50000) {
+    return product.price >= 25001 && product.price <= 50000;
+  }
+
+  if (priceValue === 100001) {
+    return product.price > 100000;
+  }
+
+  return true;
+});
+
+
+
+  // ✅ Rating Filter
+  const ratingFiltered = priceFiltered.filter((product) => {
+    if (!ratingFilterInputValue) return true;
+    return product.rating >= ratingFilterInputValue;
   });
 
-  const productList =
-    brandFilterInputValue.length === 0 ? sortFilteredFinal : brandFilteredFinal;
-
-  const priceFilteredFinal = productList.filter((product) => {
-    switch (priceFilterInputValue) {
-      case 500:
-        return product.price < 500;
-        break;
-      case 1000:
-        return product.price >= 501 && product.price <= 1000;
-        break;
-      case 2500:
-        return product.price >= 1001 && product.price <= 2500;
-        break;
-      case 2501:
-        return product.price > 2500;
-      default:
-        return product;
-    }
+  // ✅ Discount Filter
+  const discountFiltered = ratingFiltered.filter((product) => {
+    if (!discountFilterInputValue) return true;
+    return product.discountPerc >= discountFilterInputValue;
   });
 
-  const ratingFilteredFinal = priceFilteredFinal.filter((product) => {
-    if (ratingFilterInputValue) {
-      switch (ratingFilterInputValue) {
-        case 4:
-          return product.rating >= ratingFilterInputValue;
-          break;
-        case 3:
-          return product.rating >= ratingFilterInputValue;
-          break;
-        case 2:
-          return product.rating >= ratingFilterInputValue;
-          break;
-        case 1:
-          return product.rating >= ratingFilterInputValue;
-          break;
-        default:
-          return product;
-      }
-    } else {
-      return product;
-    }
-  });
-
-  const discountFilteredFinal = ratingFilteredFinal.filter((product) => {
-    if (discountFilterInputValue) {
-      switch (discountFilterInputValue) {
-        case 70:
-          return product.discountPerc >= discountFilterInputValue;
-          break;
-        case 60:
-          return product.discountPerc >= discountFilterInputValue;
-          break;
-        case 50:
-          return product.discountPerc >= discountFilterInputValue;
-          break;
-        case 40:
-          return product.discountPerc >= discountFilterInputValue;
-          break;
-        case 30:
-          return product.discountPerc >= discountFilterInputValue;
-          break;
-        default:
-          return product;
-      }
-    } else {
-      return product;
-    }
-  });
-
-  const priceSliderFilteredFinal = discountFilteredFinal.filter((product) => {
+  // ✅ Price Slider Filter
+  const finalProductList = discountFiltered.filter((product) => {
     return (
       product.price >= priceFilterSliderInputValue.minPrice &&
       product.price <= priceFilterSliderInputValue.maxPrice
     );
   });
 
-  
-
-  const finalProductList = priceSliderFilteredFinal;
-
   return (
-    <>
-      <div className={styles.productMain}>
-        {finalProductList.map((product) => {
-          return (
-            <ProductCard
-              key={product.id}
-              name={product.name}
-              brandName={product.brandName}
-              price={product.price}
-              realPrice={product.realPrice}
-              discountPercentage={product.discountPerc}
-              rating={product.rating}
-              ratedUsers={product.ratedUsers}
-              isSponsored={product.isSponsored}
-              productImage={product.image}
-              isBestSeller={product.isBestSeller}
-            />
-          );
-        })}
-      </div>
-    </>
+    <div className={styles.productMain}>
+      {finalProductList.map((product) => (
+        <ProductCard
+          key={product.id}
+          name={product.name}
+          brandName={product.brandName}
+          offer={product.offer}
+          price={product.price}
+          realPrice={product.realPrice}
+          discountPercentage={product.discountPerc}
+          rating={product.rating}
+          ratedUsers={product.ratedUsers}
+          isSponsored={product.isSponsored}
+          productImage={product.image}
+          isBestSeller={product.isBestSeller}
+          specs={product.specs}
+        />
+      ))}
+    </div>
   );
 }
 

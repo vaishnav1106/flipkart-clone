@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { sortValueContext } from "../../../App";
 
 function LargeSort() {
-  const { sortInputValue, setSortInputValue } = useContext(sortValueContext);
+  const { setSortInputValue } = useContext(sortValueContext);
   const [clickedValue, setClickedValue] = useState("popularity");
 
   function sortClick(e) {

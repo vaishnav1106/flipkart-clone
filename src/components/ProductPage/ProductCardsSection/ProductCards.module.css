@@ -1,279 +1,280 @@
-
-.productMain{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.productMain {
     border-top: 1px solid rgba(0, 0, 0, 0.11);
     margin-top: 10px;
 }
 
-.productCard{
-    padding: 26px 8px 0 ;
+/* ================= CARD ================= */
+
+.productCard {
+    padding: 26px 16px 18px;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-direction: row;
+    gap: 20px; /* increased spacing */
     background-color: white;
     overflow: hidden;
     border-left: 1px solid rgba(0, 0, 0, 0.11);
-    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
 }
-
-.productImageSec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
+/* =================== Like Sign =================== */
 
 .likeSign{
     width: 24px;
     position: absolute;
-    right: 8px;
-    top: -13px;
+    right: -4px;
+    top: 5px;
 }
 
-.bestSeller{
+/* ================= IMAGE SECTION ================= */
+
+.productImageSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 180px;
+}
+
+.product {
+    max-width:100%;
+    max-height: 160px;
+    object-fit: contain;
+}
+
+.bestSeller {
     position: absolute;
     left: 0;
     top: -17px;
     font-size: 12px;
-    padding: 0 4px;
+    padding: 2px 6px;
     background-color: rgb(0, 160, 152);
     color: white;
-    font-family: Roboto;
     border-radius: 2px;
 }
-.bestSellerNone{
-    display: none;
+
+/* ================= DETAILS SECTION ================= */
+
+.productDetailsSec {
+    flex: 1; /* VERY IMPORTANT */
 }
 
-.product{
-    width: 170px;
-}
-
-
-
-
-.productDetailsSec span{
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: -0.01px;
-    font-family: Regular;
-    color: rgb(184, 187, 191);
-   
-}
-
-
-.productDetailsSec h3{
-    font-size: 14px;
-    font-family: Regular;
-    font-weight: 400;
-    letter-spacing: -0.01px;
-    line-height: 20px;
-    color: rgb(32, 34, 36);
-     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.priceDetails{
-    display: flex;
-    margin-top: 3px;
-    gap: 5px;
-}
-
-.discountDet{
-    display: flex;
-    align-items: center;
-}
-
-.discountDet p{
-    color: #008C00;
-    font-size: 14px;
-    font-family: SemiBold;   
-    font-weight: 400;
-    letter-spacing: -0.01px;
-    line-height: 20px;
-}
-
-.discountArrow{
-    width: 16px;
-}
-
-.prices{
-    display: flex;
-    gap: 5px;
-}
-
-
-
-.prices p{
-    font-size: 14px;
-    font-family: SemiBold;   
-    font-weight: 400;
-    letter-spacing: -0.01px;
-    line-height: 20px;
-}
-.prices p:nth-child(1){
-    color: #717478;
-    text-decoration: line-through;
-}
-
-.dealStatus{
-    color: #26A541;
-    font-size: 12px;
-    padding: 4px;
-    background-color: #E7F8EC;
-    width: fit-content;
-    border-radius: 2px;
-
-}
-
-
-
-.ratingStars{
-    display: flex;
-    gap: 3px;
-    margin-top: 12px;
-}
-
-.ratingStars img{
-    width: 13px;
-}
-
-.ratingSection{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.raingLarge{
-    display: none;
-    margin: 5px 0;
-    gap: 8px;
-}
-
-.raingLarge span{
-    font-size: 13px;
-    font-family: SemiBold;
+.productDetailsSec span {
+    font-size: 11px;
     color: #878787;
+}
+
+.productDetailsSec h3 {
+    font-size: 15px;
     font-weight: 500;
+    line-height: 20px;
+    color: #212121;
+    margin: 4px 0 6px 0;
 }
 
-.raingLarge .assuredLogoLarge{
-    width: 70px;
-}
+/* ================= RATING ================= */
 
-
-
-.ratingBox{
-    background-color:#388e3c;
-    border-radius: 3px;
-    width: fit-content;
+.ratingRow {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 2px 4px 2px 6px;
-    gap: 2px;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.ratingBox {
+    background-color: #388e3c;
+    border-radius: 3px;
+    padding: 2px 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
     height: 19px;
 }
 
-.ratingBox span{
-    font-size: 11px;
-    font-weight: 500;
-    font-family: SemiBold;
+.ratingBox span {
+    font-size: 12px;
     color: white;
 }
 
-.ratingBox img{
+.ratingBox img {
     width: 10px;
     height: 10px;
-    margin-bottom: 2px;
 }
 
-.assuredLogo{
-    width: 55px;
-    margin-top: 12px;
+.ratedUsers {
+    font-size: 13px;
+    color: #878787;
 }
 
-.priceDetailsLarge{
-    display: none;
-    align-items: center;
-    gap: 8px;
+/* ================= SPEC LIST (Flipkart Style) ================= */
+
+
+.specItem {
+    font-size: 16px;
+    line-height: 20px;
+    color: #555;
+    margin-bottom: 4px;
+    font-weight: 400;
 }
 
-.priceDetailsLarge p:nth-child(1){
-    font-size: 15px;
-    font-family: SemiBold;
-    color: black;
-    font-weight: 500;
+ .specsList {
+        color:grey;
+    }
+
+.specList li::marker {
+    color: #c2c2c2;
+    font-size: 10px;
 }
 
-.priceDetailsLarge p:nth-child(2){
+/* ================= PRICE SECTION ================= */
+
+.priceSection {
+    min-width: 180px;
+    text-align: left;
+}
+
+.mainPrice {
+    font-size: 20px;
+    font-weight: 600;
+    color: #212121;
+}
+
+.priceRow {
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.realPrice {
     text-decoration: line-through;
     color: #878787;
-    font-family: Roboto;
-    font-size: 13px;
+    font-size: 14px;
+}
+
+.discount {
+    color: #008c00;
+    font-size: 14px;
     font-weight: 500;
 }
 
-.priceDetailsLarge p:nth-child(3){
-    font-size: 12px;
-    font-family: SemiBold;
-    color:#008C00;
-    font-weight: 500;
-    letter-spacing: -.2px;
+.assuredLogo {
+    width: 75px;
+    margin-top: 8px;
 }
 
-.blackStar{
-    display: none;
-    position: absolute;
-    right: 8px;
-    top: 0;
-    width: 14px;
-}
+/* ================= HOVER EFFECT ================= */
 
 @media screen and (min-width: 1170px) {
-    .productMain{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        border: none;
-        margin-top: 0;
-    }
-    .productCard{
+    
+    .productCard {
         border-left: none;
         transition: box-shadow .2s ease-in-out;
-        padding: 26px 16px 0;
     }
-    .productCard:hover{
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.164);
+
+    .productCard:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
         z-index: 1;
     }
-    .raingLarge{
-        display: flex;
+
+     .specList {
+        font-size: 14px;
+        margin-top: 4px;
+        color:grey;
+        line-height: 20px;
+        padding-left: 10px;
+        list-style-type: disc;
     }
-    .ratingSection{
+
+}
+/* ============================================== */
+@media screen and (max-width:1169px) {
+     .likeSign{
         display: none;
     }
-    .priceDetails{
-        display: none;
+    .specList {
+        font-size: 14px;
+        margin-top: 4px;
+        color:grey;
+        line-height: 20px;
+        padding-left: 10px;
+        list-style-type: disc;
     }
-    .priceDetailsLarge{
+}
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 1024px) {
+
+    .productCard {
+        flex-direction: row;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .productImageSec {
+        min-width: 110px;
+    }
+
+    .product {
+        width: 100px;
+        padding:0 15px 0 0;
+    }
+
+    .productDetailsSec {
+        flex: 1;
+    }
+
+    .productDetailsSec h3 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    /* Hide right price column */
+    .priceSection {
+        display:block;
+    }
+
+    /* New mobile price layout */
+    .mobilePriceSection {
+        margin-top: 4px;
+    }
+
+    .mobilePriceRow {
         display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #212121;
     }
-    .productDetailsSec h3{
+
+    .mobileRealPrice {
+        text-decoration: line-through;
+        color: #878787;
         font-size: 13px;
-        margin: 5px 0;
+        font-weight: 400;
     }
-    .product{
-        margin: 39px 0;
+
+    .mobileDiscount {
+        color: #008c00;
+        font-size: 13px;
+        font-weight: 500;
     }
-    .likeSign{
+
+    .specList {
+        font-size: 12px;
+        margin-top: 4px;
+        color:grey;
+        line-height: 20px;
+    }
+
+}
+@media screen and (max-width:505px){
+    .productDetailsSec{
         display: none;
     }
-    .blackStar{
-        display: block;
-    }
-    .bestSeller{
-        top: 0;
+
+    .priceSection{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: right;
     }
 }

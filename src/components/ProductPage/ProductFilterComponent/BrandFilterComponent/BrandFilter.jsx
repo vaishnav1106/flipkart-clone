@@ -1,14 +1,13 @@
-import { useState, useContext, useInsertionEffect } from "react";
+import { useState, useContext } from "react";
 import styles from "./BrandFilter.module.css";
 import arrow from "../ProductFilterAssets/greyArrow.svg";
 import search from "./BrandFIlterAssets/Search.svg";
-
 import { brandFilterValueContext } from "../../../../App";
 
 function BrandFilter() {
   const [brandClick, setBrandClick] = useState(true);
 
-  const { brandFilterInputValue, setBrandFilterInputValue } =
+  const { setBrandFilterInputValue } =
     useContext(brandFilterValueContext);
 
   function openFilter() {
@@ -53,49 +52,76 @@ function BrandFilter() {
             <div>
               <input
                 type="checkbox"
-                value="NIVIA"
-                id="NIVIA"
+                value="RealMe"
+                id="RealMe"
                 onChange={filterValue}
               />
-              <label htmlFor="NIVIA">NIVIA</label>
+              <label htmlFor="RealMe">RealMe</label>
             </div>
             <div>
               <input
                 type="checkbox"
-                value="COSCO"
-                id="COSCO"
+                value="IPhone"
+                id="IPhone"
                 onChange={filterValue}
               />
-              <label htmlFor="COSCO">COSCO</label>
+              <label htmlFor="IPhone">IPhone</label>
             </div>
             <div>
               <input
                 type="checkbox"
-                value="VECTORX"
-                id="VECTOR X"
+                value="SAMSUNG"
+                id="SAMSUNG"
                 onChange={filterValue}
               />
-              <label htmlFor="VECTOR X">VECTOR X</label>
+              <label htmlFor="SAMSUNG">SAMSUNG</label>
             </div>
             <div>
               <input
                 type="checkbox"
-                value="RASCO"
-                id="RASCO"
+                value="REDMI"
+                id="REDMI"
                 onChange={filterValue}
               />
-              <label htmlFor="RASCO">RASCO</label>
+              <label htmlFor="REDMI">REDMI</label>
             </div>
             <div>
               <input
                 type="checkbox"
-                value="LatinX"
-                id="LatinX"
+                value="Ai+"
+                id="Ai+"
                 onChange={filterValue}
               />
-              <label htmlFor="LatinX">LATIN X</label>
+              <label htmlFor="Ai+">Ai+</label>
             </div>
-            <p>605 MORE</p>
+            <div>
+              <input
+                type="checkbox"
+                value="OPPO"
+                id="OPPO"
+                onChange={filterValue}
+              />
+              <label htmlFor="OPPO">OPPO</label>
+            </div>
+             <div>
+              <input
+                type="checkbox"
+                value="HOTLINE"
+                id="HOTLINE"
+                onChange={filterValue}
+              />
+              <label htmlFor="HOTLINE">HOTLINE</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                value="VIVO"
+                id="VIVO"
+                onChange={filterValue}
+              />
+              <label htmlFor="VIVO">VIVO</label>
+            </div>
+            <p>100+ MORE</p>
           </div>
         </div>
       </div>
@@ -104,3 +130,6 @@ function BrandFilter() {
 }
 
 export default BrandFilter;
+
+
+

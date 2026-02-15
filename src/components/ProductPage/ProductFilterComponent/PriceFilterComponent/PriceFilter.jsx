@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import styles from "./PriceFilter.module.css";
 import { priceSliderValueContext } from "../../../../App";
 
@@ -57,7 +57,7 @@ function PriceFilter() {
               type="range"
               value={priceFilterSliderInputValue.minPrice}
               min="0"
-              max="2500"
+              max="200000"
               step="50"
               onChange={minPriceChange}
             />
@@ -65,7 +65,7 @@ function PriceFilter() {
               type="range"
               value={priceFilterSliderInputValue.maxPrice}
               min="0"
-              max="2500"
+              max="200000"
               step="50"
               onChange={maxpriceChange}
             />
@@ -80,17 +80,17 @@ function PriceFilter() {
             <div className={styles.minMaxPriceShow}>
               <select onChange={minPriceSelectChange}>
                 <option value="0">Min</option>
-                <option value="100">100</option>
-                <option value="500">500</option>
                 <option value="1000">1000</option>
-                <option value="2500">2500+</option>
+                <option value="10000">10000</option>
+                <option value="25000">25000</option>
+                <option value="100000">100000+</option>
               </select>
               <p>to</p>
-              <select defaultValue="2500" onChange={maxPriceSelectChange}>
-                <option value="100">100</option>
-                <option value="500">500</option>
-                <option value="1000">1000</option>
-                <option value="2500">2500+</option>
+              <select defaultValue="250000" onChange={maxPriceSelectChange}>
+                <option value="25000">25000</option>
+                <option value ="45000">45000</option>
+                <option value="50000">50000</option>
+                <option value="100000">100000+</option>
               </select>
             </div>
           </div>

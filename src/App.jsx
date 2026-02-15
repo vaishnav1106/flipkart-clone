@@ -6,10 +6,10 @@ import PFinal from "./components/ProductPage/ProductPageFinal/ProductPageFinal";
 import { Routes, Route } from "react-router-dom";
 import { createContext, useState } from "react";
 
-// eslint-disable-next-line react-refresh/only-export-components
+// Contexts
 export const sortValueContext = createContext();
 export const brandFilterValueContext = createContext();
-// eslint-disable-next-line react-refresh/only-export-components
+export const offerFilterValueContext = createContext();
 export const priceFilterValueContext = createContext();
 export const ratingFilterValueContext = createContext();
 export const discountFilterValueContext = createContext();
@@ -17,18 +17,30 @@ export const priceSliderValueContext = createContext();
 
 function App() {
   const [sortInputValue, setSortInputValue] = useState("");
+
   const [brandFilterInputValue, setBrandFilterInputValue] = useState([]);
-  const [priceFilterInputValue, setPriceFilterInputValue] = useState();
+
+  const [offerFilterInputValue, setOfferFilterInputValue] = useState([]);
+
+  const [priceFilterInputValue, setPriceFilterInputValue] = useState("");
+
   const [ratingFilterInputValue, setRatingFilterInputValue] = useState();
+
   const [discountFilterInputValue, setDiscountFilterInputValue] = useState();
+
   const [priceFilterSliderInputValue, setPriceFilterSliderInputValue] =
-    useState({ minPrice: 0, maxPrice: 2500 });
+    useState({ minPrice: 0, maxPrice: 200000});
 
   return (
-    <>
-      <sortValueContext.Provider value={{ sortInputValue, setSortInputValue }}>
-        <brandFilterValueContext.Provider
-          value={{ brandFilterInputValue, setBrandFilterInputValue }}
+    <sortValueContext.Provider
+      value={{ sortInputValue, setSortInputValue }}
+    >
+      <brandFilterValueContext.Provider
+        value={{ brandFilterInputValue, setBrandFilterInputValue }}
+      >
+        {/* ✅ OFFER PROVIDER ADDED HERE */}
+        <offerFilterValueContext.Provider
+          value={{ offerFilterInputValue, setOfferFilterInputValue }}
         >
           <priceFilterValueContext.Provider
             value={{ priceFilterInputValue, setPriceFilterInputValue }}
@@ -51,7 +63,10 @@ function App() {
                   <Routes>
                     <Route path="/" element={<Final />} />
                     <Route path="productPage" element={<PFinal />}>
-                      <Route path="filter" element={<FilterCategories />} />
+                      <Route
+                        path="filter"
+                        element={<FilterCategories />}
+                      />
                     </Route>
                     <Route path="*" element={<Error />} />
                   </Routes>
@@ -59,9 +74,9 @@ function App() {
               </discountFilterValueContext.Provider>
             </ratingFilterValueContext.Provider>
           </priceFilterValueContext.Provider>
-        </brandFilterValueContext.Provider>
-      </sortValueContext.Provider>
-    </>
+        </offerFilterValueContext.Provider>
+      </brandFilterValueContext.Provider>
+    </sortValueContext.Provider>
   );
 }
 

@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./FilterCategories.module.css";
 import arrow from "../FilterSortImages/leftArrow.svg";
@@ -18,11 +18,11 @@ import { discountFilterValueContext } from "../../../../App";
 
 function FilterCategories() {
   const navigate = useNavigate();
-  const { brandFilterInputValue, setBrandFilterInputValue } =
+  const { setBrandFilterInputValue } =
     useContext(brandFilterValueContext);
-  const {priceFilterInputValue, setPriceFilterInputValue} = useContext(priceFilterValueContext);
-  const {ratingFilterInputValue, setRatingFilterInputValue} = useContext(ratingFilterValueContext);
-  const {discountFilterInputValue, setDiscountFilterInputValue} = useContext(discountFilterValueContext)
+  const {setPriceFilterInputValue} = useContext(priceFilterValueContext);
+  const {setRatingFilterInputValue} = useContext(ratingFilterValueContext);
+  const {setDiscountFilterInputValue} = useContext(discountFilterValueContext)
 
   const [active, setActive] = useState("Brand");
 

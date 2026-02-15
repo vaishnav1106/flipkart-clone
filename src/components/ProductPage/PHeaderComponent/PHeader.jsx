@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
                 <div className='p-header-left'>
                     <img src={LeftArrow} alt="left arrow" className='left-arrow' onClick={() => navigate(-1)}/>
                     <img src={FlipLogo} alt="flipkart logo" className='flip-logo' onClick={() => navigate('/')}/>
-                    <h1>Football</h1>
+                    <h1>Mobiles</h1>
                 </div>
                 <div className='p-header-right'>
                     <img src={Search} alt="search logo"  className='search'/>

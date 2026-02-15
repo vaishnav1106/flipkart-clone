@@ -10,8 +10,7 @@ function PAddSection() {
     setIsClicked(!isCLicked);
   }
 
-  const footballDescription = `Football is one of the most popular games in the world. It is played in almost 150 countries. The main aim of this game is to score a goal against the opponent team. The team which scores the maximum goals against the other team wins the match. Buying football equipment and football gear is not very difficult. Get the best football equipment online from top brands like Nivia, 
- Vector X, Adidas, Spartan and more at reasonable prices from our store.`;
+  const footballDescription = `The Hotline Mobiles has 3 Months Manufacture’s Warranty & after Warranty period we would like to help our customers with the best possible service under low expenses`;
 
 
 
@@ -22,9 +21,9 @@ function PAddSection() {
       <div className={styles.pagePath}>
         <p>Home</p>
         <img src={greyArrow} alt="" />
-        <p>Sports</p>
+        <p>Mobiles & Accessories</p>
         <img src={greyArrow} alt="" />
-        <p>Football</p>
+        <p>Mobiles</p>
       </div>
       <p
         className={`${styles.footballDescription} ${
@@ -38,7 +37,7 @@ function PAddSection() {
       </span>
 
       <div className={styles.productCount}>
-        <h1>Football</h1>
+        <h1>Mobiles</h1>
         <p>{'(Showing 1-40 prducts of 5,160 products)'}</p>
       </div>
       <LargeSort />

@@ -6,8 +6,6 @@ import ProductAndFilterFinal from "../ProductFilterComponent/ProductAndFilterFin
 import ProductPageFooter from "../ProductPageFooterComponent/ProductPageFooter";
 import ProductCategories from "../ProductCategoriesComponent/ProductCategories";
 import { Outlet } from "react-router-dom";
-import { createContext, useState } from "react";
-
 function PFinal() {
   return (
     <>
