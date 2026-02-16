@@ -14,15 +14,15 @@
     "isBestSeller": false,
     "isNewest": false,
     "specs": {
-    "ram": "32 MB",
-    "storage": "32 MB",
-    "display": "4,57 cm (1.8 inch) Display",
-    "rearCamera": "0.3MP Rear Camera",
-    "battery": "1000 mAh",
-    "warranty": "The Hotline Mobiles has 3 Months Manufacture’s Warranty & after Warranty period we would like to help our customers with the best possible service under low expenses"
-  }
+      "ram": "32 MB",
+      "storage": "32 MB",
+      "display": "4,57 cm (1.8 inch) Display",
+      "rearCamera": "0.3MP Rear Camera",
+      "battery": "1000 mAh",
+      "warranty": "The Hotline Mobiles has 3 Months Manufacture’s Warranty & after Warranty period we would like to help our customers with the best possible service under low expenses"
+    }
   },
-    {
+  {
     "id": 2,
     "image": "/productImages/iqooz10.jpeg",
     "name": "IQOO Z10X 5G(Titanium, 128 GB)",
@@ -37,15 +37,15 @@
     "isBestSeller": false,
     "isNewest": true,
     "specs": {
-    "ram": "6 GB",
-    "storage": "128 GB",
-    "display": "17.02cm(6.72 inch)Display",
-    "rearCamera": "50MP Rear Camera",
-    "battery": "6500 mAh",
-    "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
-  }
-},
-    {
+      "ram": "6 GB",
+      "storage": "128 GB",
+      "display": "17.02cm(6.72 inch)Display",
+      "rearCamera": "50MP Rear Camera",
+      "battery": "6500 mAh",
+      "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
+    }
+  },
+  {
     "id": 3,
     "image": "/productImages/realmep4x.webp",
     "name": "realme P4x 5G",
@@ -60,16 +60,16 @@
     "isBestSeller": true,
     "isNewest": true,
     "specs": {
-    "ram": "6 GB RAM",
-    "storage": "128 GB ROM",
-    "display": "6.72 inch FHD+ Display",
-    "rearCamera": "50MP + 2MP | 8MP Front Camera",
-    "battery": "7000 mAh",
-    "processor": "Dimensity 7400 Ultra",
-    "warranty": "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In-Box Accessories"
-  }
+      "ram": "6 GB RAM",
+      "storage": "128 GB ROM",
+      "display": "6.72 inch FHD+ Display",
+      "rearCamera": "50MP + 2MP | 8MP Front Camera",
+      "battery": "7000 mAh",
+      "processor": "Dimensity 7400 Ultra",
+      "warranty": "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+    }
   },
-    {
+  {
     "id": 4,
     "image": "/productImages/motog06.webp",
     "name": "MOTOROLA g06 power",
@@ -84,14 +84,14 @@
     "isBestSeller": false,
     "isNewest": true,
     "specs": {
-    "ram": "4 GB RAM",
-    "storage": "64 GB ROM",
-    "display": "17.48cm (6.88 inch)HD+ Display",
-    "rearCamera": "50MP Rear Camera|8MP Front Camera ",
-    "battery": "7000 mAh",
-    "processor":"Helio G81 Processor",
-    "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
-  }
+      "ram": "4 GB RAM",
+      "storage": "64 GB ROM",
+      "display": "17.48cm (6.88 inch)HD+ Display",
+      "rearCamera": "50MP Rear Camera|8MP Front Camera ",
+      "battery": "7000 mAh",
+      "processor": "Helio G81 Processor",
+      "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
+    }
   },
   {
     "id": 5,
@@ -108,14 +108,14 @@
     "isBestSeller": true,
     "isNewest": false,
     "specs": {
-    "ram": "8 GB",
-    "storage": "128 GB",
-    "display": "6.6 inch FHD+ Display",
-    "rearCamera": "50MP + 8MP + 5MP | 13MP Front Camera",
-    "battery": "5000 mAh",
-    "processor": "Samsung Exynos 1380 Processor",
-    "warranty": "1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories"
-  }
+      "ram": "8 GB",
+      "storage": "128 GB",
+      "display": "6.6 inch FHD+ Display",
+      "rearCamera": "50MP + 8MP + 5MP | 13MP Front Camera",
+      "battery": "5000 mAh",
+      "processor": "Samsung Exynos 1380 Processor",
+      "warranty": "1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories"
+    }
   },
   {
     "id": 6,
@@ -132,14 +132,14 @@
     "isBestSeller": false,
     "isNewest": true,
     "specs": {
-    "ram": "4 GB RAM",
-    "storage": "64 GB ROM",
-    "display": "17.48cm (6.88 inch)HD+ Display",
-    "rearCamera": "50MP Rear Camera|8MP Front Camera ",
-    "battery": "7000 mAh",
-    "processor":"Helio G81 Processor",
-    "warranty": "1 Year Warranty"
-  }
+      "ram": "4 GB RAM",
+      "storage": "64 GB ROM",
+      "display": "17.48cm (6.88 inch)HD+ Display",
+      "rearCamera": "50MP Rear Camera|8MP Front Camera ",
+      "battery": "7000 mAh",
+      "processor": "Helio G81 Processor",
+      "warranty": "1 Year Warranty"
+    }
   },
   {
     "id": 7,
@@ -156,14 +156,14 @@
     "isBestSeller": false,
     "isNewest": false,
     "specs": {
-    "ram": "4 GB RAM",
-    "storage": "64 GB ROM | Expandable Upto 1TB",
-    "display": "6.745 inch HD+ Display",
-    "rearCamera": "50MP Rear Camera | 5MP Front Camera ",
-    "battery": "5000 mAh",
-    "processor": "T615 Processor",
-    "warranty": "1 Year Warranty on Handset and 6 Months Warranty on the Inbox Accessories"
-  }
+      "ram": "4 GB RAM",
+      "storage": "64 GB ROM | Expandable Upto 1TB",
+      "display": "6.745 inch HD+ Display",
+      "rearCamera": "50MP Rear Camera | 5MP Front Camera ",
+      "battery": "5000 mAh",
+      "processor": "T615 Processor",
+      "warranty": "1 Year Warranty on Handset and 6 Months Warranty on the Inbox Accessories"
+    }
   },
   {
     "id": 8,
@@ -180,14 +180,14 @@
     "isBestSeller": false,
     "isNewest": false,
     "specs": {
-    "ram": "6 GB",
-    "storage": "128 GB",
-    "display": "6.745 inch FHD+ Display",
-    "rearCamera": "50MP",
-    "battery": "5000 mAh",
-    "processor": "T615 Processor",
-    "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
-  }
+      "ram": "6 GB",
+      "storage": "128 GB",
+      "display": "6.745 inch FHD+ Display",
+      "rearCamera": "50MP",
+      "battery": "5000 mAh",
+      "processor": "T615 Processor",
+      "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
+    }
   },
   {
     "id": 9,
@@ -204,13 +204,13 @@
     "isBestSeller": true,
     "isNewest": true,
     "specs": {
-    "ram": "4 GB RAM",
-    "storage": "128 GB ROM",
-    "display": "6.88 inch FHD+ Display",
-    "rearCamera": "50MP + 2MP",
-    "battery": "5160 mAh",
-    "warranty": "1 Year Manufacturer Warranty"
-  }
+      "ram": "4 GB RAM",
+      "storage": "128 GB ROM",
+      "display": "6.88 inch FHD+ Display",
+      "rearCamera": "50MP + 2MP",
+      "battery": "5160 mAh",
+      "warranty": "1 Year Manufacturer Warranty"
+    }
   },
   {
     "id": 10,
@@ -227,14 +227,14 @@
     "isBestSeller": true,
     "isNewest": true,
     "specs": {
-    "ram": "8 GB",
-    "storage": "256 GB",
-    "display": "6.72 inch FHD+ Display",
-    "rearCamera": "50MP + 8MP|YES",
-    "battery": "10001 mAh",
-    "processor": "Dimensity 7400 Ultra Processor",
-    "warranty": "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories"
-  }
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "display": "6.72 inch FHD+ Display",
+      "rearCamera": "50MP + 8MP|YES",
+      "battery": "10001 mAh",
+      "processor": "Dimensity 7400 Ultra Processor",
+      "warranty": "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories"
+    }
   },
   {
     "id": 11,
@@ -251,14 +251,14 @@
     "isBestSeller": false,
     "isNewest": true,
     "specs": {
-    "ram": "6 GB",
-    "storage": "128 GB",
-    "display": "6.72 inch FHD+ Display",
-    "rearCamera": "50MP + 50MP|50MP Front Camera",
-    "battery": "5500 mAh",
-    "processor": "Snapdragon & Gen 3 Processor",
-    "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
-  }
+      "ram": "6 GB",
+      "storage": "128 GB",
+      "display": "6.72 inch FHD+ Display",
+      "rearCamera": "50MP + 50MP|50MP Front Camera",
+      "battery": "5500 mAh",
+      "processor": "Snapdragon & Gen 3 Processor",
+      "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
+    }
   },
   {
     "id": 12,
@@ -275,14 +275,14 @@
     "isBestSeller": true,
     "isNewest": false,
     "specs": {
-    "ram": "12 GB RAM",
-    "storage": "256 GB ROM",
-    "display": "6.72 inch FHD+ Display",
-    "rearCamera": "50MP + 50MP + 50MP + 2MP|32MP Front Camera",
-    "battery": "7025 mAh",
-    "processor": "Dimensity 9500 Processor",
-    "warranty": "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories"
-  }
+      "ram": "12 GB RAM",
+      "storage": "256 GB ROM",
+      "display": "6.72 inch FHD+ Display",
+      "rearCamera": "50MP + 50MP + 50MP + 2MP|32MP Front Camera",
+      "battery": "7025 mAh",
+      "processor": "Dimensity 9500 Processor",
+      "warranty": "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories"
+    }
   },
   {
     "id": 13,
@@ -299,14 +299,14 @@
     "isBestSeller": false,
     "isNewest": true,
     "specs": {
-    "ram": "12 GB ROM",
-    "storage": "512 GB RAM",
-    "display": "16.04cm  Display",
-    "rearCamera": "200MP + 50MP + 50MP|50MP Front Camera",
-    "battery": "6040 mAh",
-    "processor": "Dimensity 9500 Processor",
-    "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
-  }
+      "ram": "12 GB ROM",
+      "storage": "512 GB RAM",
+      "display": "16.04cm  Display",
+      "rearCamera": "200MP + 50MP + 50MP|50MP Front Camera",
+      "battery": "6040 mAh",
+      "processor": "Dimensity 9500 Processor",
+      "warranty": "1 Year Warranty on Handset and 6 Months Warranty on Accessories"
+    }
   },
   {
     "id": 14,
@@ -323,14 +323,14 @@
     "isBestSeller": false,
     "isNewest": false,
     "specs": {
-    "ram": "8 GB ROM",
-    "storage": "128 GB RAM",
-    "display": "6.72 inch Full HD+ Display",
-    "rearCamera": "50MP + 8MP + 32MP | 32MP Front Camera",
-    "battery": "5000 mAh",
-    "processor": "Mediatek Dimensity 7050 Processor",
-    "warranty": "1 Year Manufacturer Warranty"
-  }
+      "ram": "8 GB ROM",
+      "storage": "128 GB RAM",
+      "display": "6.72 inch Full HD+ Display",
+      "rearCamera": "50MP + 8MP + 32MP | 32MP Front Camera",
+      "battery": "5000 mAh",
+      "processor": "Mediatek Dimensity 7050 Processor",
+      "warranty": "1 Year Manufacturer Warranty"
+    }
   },
   {
     "id": 15,
@@ -347,14 +347,14 @@
     "isBestSeller": true,
     "isNewest": true,
     "specs": {
-    "ram": "8GB ROM ",
-    "storage": "128GB RAM",
-    "display": "6.59 inch Display",
-    "rearCamera": "50MP + 12MP | 12MP Front Camera",
-    "battery": "4000 mAh",
-    "processor": "8 Gen 3 Processor",
-    "warranty": "1 Year Manufacturer Warranty for Device and 6 Months for Inbox Accessories"
-  }
+      "ram": "8GB ROM ",
+      "storage": "128GB RAM",
+      "display": "6.59 inch Display",
+      "rearCamera": "50MP + 12MP | 12MP Front Camera",
+      "battery": "4000 mAh",
+      "processor": "8 Gen 3 Processor",
+      "warranty": "1 Year Manufacturer Warranty for Device and 6 Months for Inbox Accessories"
+    }
   },
   {
     "id": 16,
@@ -363,20 +363,20 @@
     "brandName": "SAMSUNG",
     "offerFilter": "BuyMore",
     "price": 2999,
-    "realPrice":3500,
+    "realPrice": 3500,
     "rating": 3,
     "ratedUsers": 13234,
     "isSponsored": false,
     "isBestSeller": false,
     "isNewest": false,
     "specs": {
-    "ram": "4 MB RAM",
-    "storage": "32 MB ROM",
-    "display": "2.03 inch VAG Display",
-    "rearCamera": "0.3MP Rear Camera",
-    "battery": "1000 mAh",
-    "warranty": "1 Year Manufacturer Warranty"
-  }
+      "ram": "4 MB RAM",
+      "storage": "32 MB ROM",
+      "display": "2.03 inch VAG Display",
+      "rearCamera": "0.3MP Rear Camera",
+      "battery": "1000 mAh",
+      "warranty": "1 Year Manufacturer Warranty"
+    }
   },
   {
     "id": 17,
@@ -385,40 +385,40 @@
     "brandName": "IPhone",
     "offerFilter": "EMI",
     "price": 82900,
-    "realPrice":82900,
-    "rating": 4.7,
-    "ratedUsers": 5037,
-    "isSponsored": false,
-    "isBestSeller": true,
-    "isNewest": false,
-    "specs": {
-    "storage": "256 GB",
-    "display": "6.3 inch Super Retina XDR Display",
-    "rearCamera": "48MP + 48MP|18MP Front Camera",
-    "processor": "A19 Chip, 6 Core Processor Processor",
-    "warranty": "Apple One (1) Year Limited Warranty"
-  }
-  },
-    {
-    "id": 18,
-    "image": "/productImages/iphone17sage.webp",
-    "name": "Apple iPhone 17 (Sage, 256 GB)",
-    "brandName": "IPhone",
-    "offerFilter": "EMI",
-    "price": 82900,
-    "realPrice":82900,
+    "realPrice": 82900,
     "rating": 4.7,
     "ratedUsers": 5037,
     "isSponsored": false,
     "isBestSeller": true,
     "isNewest": true,
     "specs": {
-    "storage": "256 GB",
-    "display": "6.3 inch Super Retina XDR Display",
-    "rearCamera": "48MP + 48MP|18MP Front Camera",
-    "processor": "A19 Chip, 6 Core Processor Processor",
-    "warranty": "Apple One (1) Year Limited Warranty"
-  }
+      "storage": "256 GB",
+      "display": "6.3 inch Super Retina XDR Display",
+      "rearCamera": "48MP + 48MP|18MP Front Camera",
+      "processor": "A19 Chip, 6 Core Processor Processor",
+      "warranty": "Apple One (1) Year Limited Warranty"
+    }
+  },
+  {
+    "id": 18,
+    "image": "/productImages/iphone17sage.webp",
+    "name": "Apple iPhone 17 (Sage, 256 GB)",
+    "brandName": "IPhone",
+    "offerFilter": "EMI",
+    "price": 82900,
+    "realPrice": 82900,
+    "rating": 4.7,
+    "ratedUsers": 5037,
+    "isSponsored": false,
+    "isBestSeller": true,
+    "isNewest": true,
+    "specs": {
+      "storage": "256 GB",
+      "display": "6.3 inch Super Retina XDR Display",
+      "rearCamera": "48MP + 48MP|18MP Front Camera",
+      "processor": "A19 Chip, 6 Core Processor Processor",
+      "warranty": "Apple One (1) Year Limited Warranty"
+    }
   },
   {
     "id": 19,
@@ -427,21 +427,21 @@
     "brandName": "SAMSUNG",
     "offerFilter": "EMI",
     "price": 174999,
-    "realPrice":17499,
+    "realPrice": 17499,
     "rating": 4.6,
     "ratedUsers": 608,
     "isSponsored": false,
     "isBestSeller": true,
     "isNewest": true,
     "specs": {
-    "ram": "12GB ROM ",
-    "storage": "256GB RAM",
-    "display": "8inch QXGA+ Display",
-    "rearCamera": "200MP + 12MP + 10MP | 10MP Front Camera",
-    "battery": "4400 mAh",
-    "processor": "Snapdragon 8 Elite for Galaxy Processor",
-    "warranty": "1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories"
-  }
+      "ram": "12GB ROM ",
+      "storage": "256GB RAM",
+      "display": "8inch QXGA+ Display",
+      "rearCamera": "200MP + 12MP + 10MP | 10MP Front Camera",
+      "battery": "4400 mAh",
+      "processor": "Snapdragon 8 Elite for Galaxy Processor",
+      "warranty": "1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories"
+    }
   },
   {
     "id": 20,
@@ -450,7 +450,7 @@
     "brandName": "IPhone",
     "offerFilter": "SpecialPrice",
     "price": 64900,
-    "realPrice":64900,
+    "realPrice": 64900,
     "discountPerc": 12,
     "rating": 4.6,
     "ratedUsers": 209216,
@@ -458,62 +458,55 @@
     "isBestSeller": false,
     "isNewest": false,
     "specs": {
-    "storage": "128 GB",
-    "display": "6.1 inch Super Retina XDR Display",
-    "rearCamera": "48MP + 12MP|12MP Front Camera",
-    "processor": "A19 Chip, 6 Core Processor Processor",
-    "warranty": "Apple One (1) Year Limited Warranty"
-  }
+      "storage": "128 GB",
+      "display": "6.1 inch Super Retina XDR Display",
+      "rearCamera": "48MP + 12MP|12MP Front Camera",
+      "processor": "A19 Chip, 6 Core Processor Processor",
+      "warranty": "Apple One (1) Year Limited Warranty"
+    }
   },
   {
     "id": 21,
     "image": "/productImages/iphone16plus.webp",
     "name": "Apple iPhone 16 Plus (Black, 256 GB)",
     "brandName": "IPhone",
-    "offerFilter": "SpecialPrice",
-    "price": 12202,
-    "realPrice": 13999,
-    "discountPerc": 12,
-    "rating": 4.2,
-    "ratedUsers": 2417,
-    "isSponsored": false,
-    "isBestSeller": true,
-    "isNewest": false,
-    "specs": {
-    "ram": "6 GB",
-    "storage": "128 GB",
-    "display": "6.72 inch FHD+ Display",
-    "rearCamera": "50MP + 2MP",
-    "battery": "7000 mAh",
-    "processor": "Dimensity 7400 Ultra",
-    "warranty": "1 Year Manufacturer Warranty"
-  }
-  },
-  {
-    "id": 22,
-    "image": "/productImages/iqooz10lite.webp",
-    "name": "IQOO Z10X lITE 5G(Titanium Blue, 128 GB)",
-    "brandName": "HOTLINE",
-    "offerFilter": "SpecialPrice",
-    "price": 12202,
-    "realPrice": 13999,
-    "discountPerc": 12,
-    "rating": 4.2,
-    "ratedUsers": 2417,
+    "offerFilter": "EMI",
+    "price": 74900,
+    "realPrice": 79900,
+    "discountPerc": 6,
+    "rating": 4.6,
+    "ratedUsers": 4359,
     "isSponsored": false,
     "isBestSeller": false,
     "isNewest": false,
     "specs": {
-    "ram": "6 GB",
-    "storage": "128 GB",
-    "display": "6.72 inch FHD+ Display",
-    "rearCamera": "50MP + 2MP",
-    "battery": "7000 mAh",
-    "processor": "Dimensity 7400 Ultra",
-    "warranty": "1 Year Manufacturer Warranty"
+      "ram": "6 GB",
+      "storage": "128 GB",
+      "display": "6.72 inch FHD+ Display",
+      "rearCamera": "48MP + 12MP|12MP Front Camera",
+      "processor": "A18 Chip, 6 Core Processor",
+      "warranty": "1 Year Warranty on Handset and 1 Year Warranty for in Box Accessories"
+    }
+  },
+  {
+    "id": 22,
+    "image": "/productImages/samsungGuru.webp",
+    "name": "Samsung Guru 1200",
+    "brandName": "SAMSUNG",
+    "offerFilter": "SpecialPrice",
+    "price": 755,
+    "realPrice": 1699,
+    "discountPerc": 54,
+    "rating": 3,
+    "ratedUsers": 12389,
+    "isSponsored": false,
+    "isBestSeller": false,
+    "isNewest": false,
+    "specs": {
+      "ram": "4MB RAM|10MB ROM",
+      "display": "1.53inch Display",
+      "battery": "800 mAh",
+      "warranty": "NA"
+    }
   }
-  }
-
-  
 ]
-  
