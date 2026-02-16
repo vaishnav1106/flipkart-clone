@@ -4,7 +4,7 @@ import { useContext } from 'react';
 
 function DiscountFilterOptions() {
 
-    const {discountFilterInputValue, setDiscountFilterInputValue} = useContext(discountFilterValueContext)
+    const {setDiscountFilterInputValue} = useContext(discountFilterValueContext)
 
     function discountFilter(e) {
         let discountValue;
@@ -24,6 +24,7 @@ function DiscountFilterOptions() {
                 <CheckBox name="50% or more" value={50} onChange={discountFilter}/>
                 <CheckBox name="40% or more" value={40} onChange={discountFilter}/>
                 <CheckBox name="30% or more" value={30} onChange={discountFilter}/>
+                <CheckBox name="10% or more" value={10} onChange={discountFilter}/>
             </div>
         </>
     );
